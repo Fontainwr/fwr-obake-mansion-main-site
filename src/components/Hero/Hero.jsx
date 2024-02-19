@@ -11,8 +11,8 @@ export const Hero = () => {
         <p className={styles.description}>
           We are a US/Japanese Company 
         </p>
-        <a href="mailto:myemail@email.com" className={styles.contactBtn}>
-          Contact Us!
+        <a href="mailto:info@obakesmansion.com" className={styles.contactBtn}>
+        info@obakesmansion.com
         </a>
       </div>
       <img

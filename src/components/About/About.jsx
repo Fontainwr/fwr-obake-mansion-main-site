@@ -15,33 +15,19 @@ export const About = () => {
         />
         <ul className={styles.aboutItems}>
           <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
-              <p>
-                I'm a frontend developer with experience in building responsive
-                and optimized sites
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Backend Developer</h3>
-              <p>
-                I have experience developing fast and optimised back-end systems
-                and APIs
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
-            <div className={styles.aboutItemText}>
-              <h3>UI Designer</h3>
-              <p>
-                I have designed multiple landing pages and have created design
-                systems as well
-              </p>
+              <h3>合同会社OBAKEs Mansion
+              代表社員 リチャードソン幸</h3>
+              <p2>OBAKEs Mansion LLCは、日本を拠点とするダイナミックで革新的な会社で、アニメーション、エフェクト、CM、およびグラフィックスに関する優れたサービスを提供することを使命としています。代表社員であるミユキ・リチャードソンを中心に、私たちはプロジェクトごとに卓越した品質と創造性を提供することを誇りに思っています。
+
+物語を語る情熱と卓越性に対するコミットメントを持ち、OBAKEs Mansion LLCは、クライアントの多様なニーズに対応するためにカスタマイズされた包括的なサービスを提供しています。アニメーションキャラクターを生き生きとさせたい、魅力的なビジュアルエフェクトを作りたい、心を掴むCMを制作したい、または見事なグラフィックスをデザインしたい場合でも、私たちの才能あるチームが、あなたのビジョンを現実に変えるお手伝いをします。
+
+OBAKEs Mansion LLCでは、業界の技術革新の最前線にいることの重要性を理解しています。そのため、私たちは最新のツールと技術に投資し、私たちの仕事が最高水準の品質と革新性を満たすだけでなく、それを上回ることを確認しています。
+
+顧客満足度への献身と卓越性への不変のコミットメントにより、私たちは地元および国際的なクライアントにとって信頼できるパートナーとしての評判を築いてきました。私たちは、クライアントと緊密に協力し、彼らの独自のニーズと目標が正確かつ創造的に満たされることを誇りに思っています。
+
+OBAKEs Mansion LLCのアニメーション、エフェクト、CM、およびグラフィックスに関するニーズについてご検討いただき、誠にありがとうございます。私たちは、最も魅力的で記憶に残る方法で、あなたのアイデアを実現するための機会を楽しみにしています。
+</p2>
             </div>
           </li>
         </ul>

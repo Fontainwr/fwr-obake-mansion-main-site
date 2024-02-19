@@ -2,7 +2,7 @@
 
 .container {
   color: var(--color-text);
-  margin-top: 79px;
+  margin-top: 9px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -23,7 +23,6 @@
 }
 
 .skills {
-  width: 45%;
   display: flex;
   flex-wrap: wrap;
   gap: 37px;
@@ -69,7 +68,7 @@
   align-items: center;
   gap: 17px;
   background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
+  background: linear-gradient(90deg, #6d3c1974 0%, rgba(25, 55, 109, 0) 100%);
   border-radius: 10px;
   padding: 24px;
 }
