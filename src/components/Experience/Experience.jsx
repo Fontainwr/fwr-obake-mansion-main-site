@@ -8,6 +8,7 @@ export const Experience = () => {
   return (
     <section className={styles.container} id="experience">
       <h2 className={styles.title}>Examples / Projects</h2>
+      <br></br>
       <div className={styles.content}>
         <ul className={styles.history}>
           {history.map((historyItem, id) => (
