@@ -107,4 +107,30 @@
     width: 70vw; /* Adjust width as needed for smaller screens */
     min-width: auto;
   }
+
+
+
+
+
+
+
+
+
+  .underConstruction {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8d7da; /* Adjust background color as needed */
+    color: #721c24; /* Adjust text color as needed */
+    padding: 20px 0; /* Increase padding for more space around the text */
+    text-align: center;
+  }
+  
+  .underConstruction p {
+    margin: 10;
+    font-size: 100%; /* Increase font size for a bigger text */
+    font-weight: bold; /* Add bold font weight */
+  }
+  
 }

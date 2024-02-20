@@ -1,5 +1,6 @@
 @import "../../vars.css";
 
+
 .container {
   color: var(--color-text);
   margin-top: 120px;
@@ -13,15 +14,15 @@
 }
 
 .text h2 {
-  font-size: 70px;
+  font-size: 3vw; /* Adjust font size using viewport width */
   font-weight: 700;
-  letter-spacing: 4px;
+  letter-spacing: 0.2em; /* Adjust letter spacing as needed */
 }
 
 .text p {
-  font-size: 30px;
+  font-size: 3vw; /* Adjust font size using viewport width */
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 0.1em; /* Adjust letter spacing as needed */
 }
 
 .links {
@@ -29,21 +30,13 @@
   flex-direction: column;
   align-items: flex-start;
   list-style: none;
-  gap: 26px;
-}
-
-.link {
-  display: flex;
-  align-items: center;
-  gap: 25px;
+  gap: 2vh; /* Adjust gap using viewport height */
 }
 
 .link a {
-  color: var(--color-text);
-  text-decoration: none;
-  font-size: 30px;
+  font-size: 3vw; /* Adjust font size using viewport width */
   font-weight: 400;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.1em; /* Adjust letter spacing as needed */
 }
 
 @media screen and (max-width: 830px) {
@@ -62,4 +55,12 @@
     align-items: center;
   }
 
+  .text h2 {
+    font-size: 10vw; /* Adjust font size using viewport width for smaller screens */
+  }
+
+  .text p,
+  .link a {
+    font-size: 4vw; /* Adjust font size using viewport width for smaller screens */
+  }
 }
