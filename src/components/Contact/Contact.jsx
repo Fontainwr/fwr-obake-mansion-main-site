@@ -9,18 +9,20 @@ export const Contact = () => {
       <div className={styles.text}>
         <h2>Contact</h2>
         <p>Feel free to reach out!</p>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
           <a href="mailto:myemail@email.com">info@obakesmansion.com</a>
-        </li>
-        <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
-            alt="LinkedIn icon"
-          />
-          <a href="https://www.linkedin.com/myname">linkedin.com/miyukimaruyama</a>
         </li>
       </ul>
     </footer>

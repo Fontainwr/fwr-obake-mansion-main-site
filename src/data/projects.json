@@ -2,7 +2,7 @@
   {
     "title": "Shirts",
     "imageSrc": "projects/project.png",
-    "description": "Buy some shirts!.",
+    "description": "",
     "skills": [],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
@@ -10,7 +10,7 @@
   {
     "title": "Jackets",
     "imageSrc": "projects/project.png",
-    "description": "Buy some Jackets.",
+    "description": "",
     "skills": [],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"
@@ -18,7 +18,7 @@
   {
     "title": "Shopping",
     "imageSrc": "projects/project.png",
-    "description": "All other Items",
+    "description": "",
     "skills": [],
     "demo": "https://www.example.com",
     "source": "https://www.github.com"

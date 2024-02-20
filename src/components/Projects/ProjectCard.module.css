@@ -59,3 +59,9 @@
   background: var(--color-primary);
   padding: 1px 22px;
 }
+
+.image {
+  width: 180px; /* Adjust width as needed */
+  height: 180px; /* Adjust height as needed */
+  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+}
