@@ -4,23 +4,7 @@
     "imageSrc": "projects/project.png",
     "description": "",
     "skills": [],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Jackets",
-    "imageSrc": "projects/project.png",
-    "description": "",
-    "skills": [],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Shopping",
-    "imageSrc": "projects/project.png",
-    "description": "",
-    "skills": [],
-    "demo": "https://www.example.com",
+    "demo": "https://www.instagram.com/obk.mansion_shop/",
     "source": "https://www.github.com"
   }
 ]
