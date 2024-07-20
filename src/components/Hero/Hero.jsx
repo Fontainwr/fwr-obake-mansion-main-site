@@ -55,17 +55,21 @@ export const Hero = () => {
       <br></br> 
       <br></br>
       <br></br>
-        <h1 className={styles.title}>合同会社OBAKE’s Mansion</h1>
-        <p className={styles.description}>代表社員　リチャードソン幸</p>
-        <a href="mailto:info@obakesmansion.com" className={styles.contactBtn}>
-          Contact Us!
-        </a>
+        <h1 className={styles.title}> We are OBAKE’s Mansion</h1>
+        <p className={styles.description}></p>
       </div>
       <img
         src={getImageUrl("hero/heroImage.png")}
         alt="Hero image of me"
         className={styles.heroImg}
       />
+            <br></br>
+      <br></br>
+      <br></br> 
+      <br></br>
+              <a href="mailto:info@obakesmansion.com" className={styles.contactBtn}>
+          Contact Us!
+        </a>
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>

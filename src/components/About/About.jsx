@@ -17,18 +17,29 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <div className={styles.aboutItemText}>
               <h3>合同会社OBAKEs Mansion
-              代表社員 リチャードソン幸</h3>
+              代表挨拶</h3>
               <hr></hr>
               <br></br>
-              <p2>OBAKEs Mansion LLCは、日本を拠点とするダイナミックで革新的な会社で、アニメーション、エフェクト、CM、およびグラフィックスに関する優れたサービスを提供することを使命としています。代表社員であるミユキ・リチャードソンを中心に、私たちはプロジェクトごとに卓越した品質と創造性を提供することを誇りに思っています</p2>
+              <p2>合同会社OBAKE's Mansionは、クリエイティブな魔法を紡ぐ、ちょっと不思議だけど怖くないオバケ屋敷のような会社です。アメリカ留学から１８年間の在米経験を経て、１０年以上のアニメーションやゲーム業界でのキャリアを築いた後日本に帰国したリチャードソン幸によって、令和５年に設立されました。
+弊社では、ゲーム開発とアニメーション制作を主軸にしつつ、オリジナルグッズの製作や販売、魅力的な音声コンテンツや動画制作、ワークショップの開催など、クリエイティブなことに積極的に取り組み、不思議でワクワクする世界を楽しく広めることが弊社のミッションです。不思議でヘンテコなオバケ屋敷のような弊社の事業は、まるで開けたらどんなオバケが出てくるかわからないマンションの一室のようです。生まれたばかりのOBAKE's Mansionをどうぞよろしくお願いいたします。
+<br></br>
+<br></br>
+合同会社OBAKE's Mansion
+代表社員　リチャードソン幸
+</p2>
               <br></br>
               <br></br>
               <br></br>
               <br></br>
-              <h3>Founder: Miyuki Maruyama Richardson</h3>
+              <h3>About Us</h3>
               <hr></hr>
               <br></br>
-              <p2>Miyuki Maruyama Richardson, known affectionately as "Maruchan," is a seasoned Character Animator with a diverse background in both traditional and digital animation. With a keen eye for detail and a passion for bringing characters to life, Maruchan has contributed to a range of projects spanning games, web shorts, and conference productions.</p2>
+              Founder- Miyuki Richardson 
+              <br></br>
+              <br></br>
+              <p2>Godo Kaisha OBAKE's Mansion is a company that weaves creative magic. Founded in 2023 by Miyuki Richardson, who returned to Japan after over 18 years in the United States, building a career of over a decade in the animation and gaming industries. While our primary endeavors lie in game development and animation production, our repertoire extends far beyond. Crafting original merchandise, delivering captivating audiovisual content, and offering creative workshops are all integral parts of our expertise. 
+At OBAKE's Mansion, creative ideas come to life, and imaginations take flight in our unique space. Open our doors, and embark on a new adventure. We're ready to captivate your heart and deliver experiences filled with wonder and delight.
+</p2>
             
             
             </div>
