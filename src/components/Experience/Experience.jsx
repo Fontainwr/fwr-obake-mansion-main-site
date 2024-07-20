@@ -10,25 +10,28 @@ export const Experience = () => {
       <h2 className={styles.title}>会社概要/Company info</h2>
       <br></br>
       <div className={styles.content}>
-        <ul className={styles.history}>
+        <p className={styles.history}>
           {history.map((historyItem, id) => (
-            <li key={id} className={styles.historyItem}>
+            <p key={id} className={styles.historyItem}>
               <img
                 src={getImageUrl(historyItem.imageSrc)}
                 alt={`${historyItem.organisation} Logo`}
               />
               <div className={styles.historyItemDetails}>
                 <h3>{`${historyItem.role}  ${historyItem.organisation}`}</h3>
-                <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                <ul>
-                  {historyItem.experiences.map((experience, id) => (
-                    <li key={id}>{experience}</li>
-                  ))}
-                </ul>
+                <p>{`${historyItem.startDate}  ${historyItem.endDate}`}</p>
+                <br></br>
               </div>
-            </li>
+              <br />
+              <div className={styles.historyItemDetails}>
+                <h3>{`${historyItem.role1}  ${historyItem.organisation1}`}</h3>
+                <p>{`${historyItem.startDate1}  ${historyItem.endDate1}`}</p>
+                <br></br>
+              </div>
+
+            </p>
           ))}
-        </ul>
+        </p>
       </div>
     </section>
   );
