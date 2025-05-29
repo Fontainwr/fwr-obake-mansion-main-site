@@ -9,6 +9,7 @@ export const Contact = () => {
       <div className={styles.text}>
         <h2>Contact Info</h2>
         <p>Feel free to reach out!</p>
+              <p>Thank you</p>
           <br></br>
           <br></br>
           <br></br>
