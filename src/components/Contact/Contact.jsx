@@ -20,6 +20,8 @@ export const Contact = () => {
           <br></br>
           <br></br>
           <br></br>
+          <br></br>
+          <br></br>
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
