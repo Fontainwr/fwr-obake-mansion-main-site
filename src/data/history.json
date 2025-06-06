@@ -1,16 +1,12 @@
 [
   {
-    "role": "会社名/Company Name: ",
-    "organisation":"",
-    "startDate": "合同会社OBAKE‘s Mansion/ Godo Kaisha OBAKE’s Mansion",
-    "endDate": "",
-    "experiences": [""],
-    "imageSrc": "hero/heroImage.png",
-
-    "role1": "所在地/ Address ",
-    "organisation1":"",
-    "startDate1": "東京都豊島区東池袋1-17-11パークハイツ池袋1105",
-    "endDate1": ""
+    "companyName": "合同会社OBAKE‘s Mansion / Godo Kaisha OBAKE’s Mansion",
+    "address": "東京都豊島区東池袋1-17-11パークハイツ池袋1105",
+    "contact": "info@obakesmansion.com",
+    "founder": "リチャードソン幸 / Miyuki Maruyama Richardson",
+    "capital": "30万円 / 300,000 yen",
+    "clients": "Double Fine Productions",
+    "established": "令和5年1月 / January, 2023",
+    "imageSrc": "hero/heroImage.png"
   }
-
 ]
