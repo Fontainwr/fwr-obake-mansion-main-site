@@ -3,6 +3,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  align-items: flex-start; /* Align everything left on desktop */
   border-radius: 20px;
   background-color: rgba(227, 207, 32, 0.001);
   box-shadow: 0 2px 28px 0 #111dff4f;
@@ -11,18 +12,27 @@
 }
 
 .image {
-  margin-bottom: 26px;
+  margin-bottom: 4px;
+  width: 130px; /* Adjust width as needed */
+  height: 130px; /* Adjust height as needed */
+  object-fit: cover;
+  border-radius: 8px;
+  align-self: flex-start; /* Align image left */
 }
 
 .title {
   font-size: 25px;
   font-weight: 700;
+  text-align: left;
+  width: 100%;
 }
 
 .description {
   margin-top: 6px;
   font-size: 25px;
   font-weight: 400;
+  text-align: left;
+  width: 100%;
 }
 
 .skills {
@@ -33,6 +43,7 @@
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
+  justify-content: flex-start; /* Align skills left */
 }
 
 .skill {
@@ -47,7 +58,7 @@
   width: 100%;
   margin-top: 26px;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start; /* Align links left */
 }
 
 .link {
@@ -60,8 +71,29 @@
   padding: 1px 22px;
 }
 
-.image {
-  width: 180px; /* Adjust width as needed */
-  height: 180px; /* Adjust height as needed */
-  object-fit: cover; /* Ensure the image maintains its aspect ratio */
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    align-items: center; /* Center all content on mobile */
+    padding: 18px 12px;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+    align-self: center; /* Center image on mobile */
+  }
+
+  .title,
+  .description {
+    text-align: center;
+  }
+
+  .skills {
+    justify-content: center; /* Center skills on mobile */
+  }
+
+  .links {
+    justify-content: center; /* Center links on mobile */
+  }
 }
