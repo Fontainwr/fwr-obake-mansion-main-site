@@ -3,21 +3,35 @@
 .container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align everything left on desktop */
+  align-items: flex-start;
   border-radius: 20px;
   background-color: rgba(227, 207, 32, 0.001);
   box-shadow: 0 2px 28px 0 #111dff4f;
   padding: 18px 24px;
   max-width: 345px;
+
+  /* ✅ Gradient Hover Effect from .aboutItem */
+  background-image: linear-gradient(
+    90deg,
+    rgba(59, 16, 146, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out;
+}
+
+.container:hover {
+  background-size: 100% 100%;
 }
 
 .image {
   margin-bottom: 4px;
-  width: 130px; /* Adjust width as needed */
-  height: 130px; /* Adjust height as needed */
+  width: 130px;
+  height: 130px;
   object-fit: cover;
   border-radius: 8px;
-  align-self: flex-start; /* Align image left */
+  align-self: flex-start;
 }
 
 .title {
@@ -43,22 +57,37 @@
   flex-wrap: wrap;
   gap: 6px;
   list-style: none;
-  justify-content: flex-start; /* Align skills left */
+  justify-content: flex-start;
 }
 
 .skill {
   font-size: 25px;
   font-weight: 400;
   border-radius: 100px;
-  background: var(--color-dark);
   padding: 2px 22px;
+  color: var(--color-text);
+  background-color: var(--color-dark);
+
+  /* Gradient Hover Effect */
+  background-image: linear-gradient(
+    90deg,
+    rgba(59, 16, 146, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out;
+}
+
+.skill:hover {
+  background-size: 100% 100%;
 }
 
 .links {
   width: 100%;
   margin-top: 26px;
   display: flex;
-  justify-content: flex-start; /* Align links left */
+  justify-content: flex-start;
 }
 
 .link {
@@ -67,21 +96,35 @@
   font-size: 30px;
   font-weight: 600;
   border-radius: 100px;
-  background: var(--color-primary);
   padding: 1px 22px;
+  background-color: var(--color-primary);
+
+  /* Gradient Hover Effect */
+  background-image: linear-gradient(
+    90deg,
+    rgba(59, 16, 146, 0.42) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.4s ease-in-out;
+}
+
+.link:hover {
+  background-size: 100% 100%;
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
   .container {
-    align-items: center; /* Center all content on mobile */
+    align-items: center;
     padding: 18px 12px;
   }
 
   .image {
     width: 120px;
     height: 120px;
-    align-self: center; /* Center image on mobile */
+    align-self: center;
   }
 
   .title,
@@ -90,10 +133,10 @@
   }
 
   .skills {
-    justify-content: center; /* Center skills on mobile */
+    justify-content: center;
   }
 
   .links {
-    justify-content: center; /* Center links on mobile */
+    justify-content: center;
   }
 }
