@@ -1,39 +1,55 @@
-/* Hero.module.css */
-
 .container {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin: 49px 10% 0;
   z-index: 1;
 }
 
 .content {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: var(--color-text);
   z-index: 1;
 }
 
 .title {
-  font-size: 4vw; /* Adjust font size as needed */
+  font-size: 4vw;
   font-weight: 900;
-  margin-bottom: 3vw; /* Adjust margin as needed */
+  margin-bottom: 3vw;
   font-family: var(--font-roboto);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
+    rgba(255, 255, 255, 1) 60%,
+    rgba(255, 255, 255, 0.3) 100%
   );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.6),
+    0 0 16px rgba(124, 30, 224, 0.3);
+
+  filter: blur(0.3px);
+  transition: all 0.3s ease-in-out;
+}
+
+.title:hover {
+  text-shadow:
+    0 0 12px rgba(255, 255, 255, 0.8),
+    0 0 24px rgba(124, 30, 224, 0.4);
+  filter: blur(0.4px);
 }
 
 .description {
-  font-size: 2.5vw; /* Adjust font size as needed */
+  font-size: 2.5vw;
   font-family: var(--font-roboto);
-  margin-bottom: 4vw; /* Adjust margin as needed */
+  margin-bottom: 4vw;
 }
 
 .contactBtn {
@@ -41,26 +57,40 @@
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
-  font-size: 2.5vw; /* Adjust font size as needed */
-  font-weight: 600;
-  padding: 1.5vw 2.5vw; /* Adjust padding as needed */
+  font-size: 1.5vw;
+  font-weight: 200;
+  padding: 1vw 2vw;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .heroImg {
-  width: 50vw; /* Initial width */
-  max-width: 300px; /* Maximum width for larger screens */
-  animation: floating 3s infinite ease-in-out;
+  width: 50vw;
+  max-width: 300px;
+  animation: floatGhost 4s ease-in-out infinite, ghostFade 6s ease-in-out infinite;
   z-index: 1;
 }
 
-@media screen and (max-width: 830px) {
-  .heroImg {
-    width: 70vw; /* Adjust width for smaller screens */
-    max-width: 60%; /* Maximum width for smaller screens */
+@keyframes floatGhost {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
+@keyframes ghostFade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
 
 .topBlur,
 .bottomBlur {
@@ -74,63 +104,38 @@
 }
 
 .topBlur {
-  top: -15vw; /* Adjust top position as needed */
-  left: -10vw; /* Adjust left position as needed */
+  top: -15vw;
+  left: -10vw;
   background: rgba(43, 21, 140, 0.19);
 }
 
 .bottomBlur {
-  top: 15vw; /* Adjust top position as needed */
-  right: -25vw; /* Adjust right position as needed */
+  top: 15vw;
+  right: -25vw;
   background: rgba(77, 48, 158, 0.48);
-}
-
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 10px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
 }
 
 @media screen and (max-width: 830px) {
   .heroImg {
-    width: 80vw; /* Adjust width as needed for smaller screens */
+    width: 80vw;
+  }
+
+  .contactBtn {
+    font-size: 3.5vw;
+    padding: 2vw 4vw;
+  }
+
+  .title {
+    font-size: 8vw;
+  }
+
+  .description {
+    font-size: 4.5vw;
   }
 
   .topBlur,
   .bottomBlur {
-    width: 70vw; /* Adjust width as needed for smaller screens */
+    width: 70vw;
     min-width: auto;
   }
-
-
-
-
-
-
-
-
-
-  .underConstruction {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f8d7da; /* Adjust background color as needed */
-    color: #721c24; /* Adjust text color as needed */
-    padding: 20px 0; /* Increase padding for more space around the text */
-    text-align: center;
-  }
-  
-  .underConstruction p {
-    margin: 10;
-    font-size: 100%; /* Increase font size for a bigger text */
-    font-weight: bold; /* Add bold font weight */
-  }
-  
 }
