@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Experience.module.css";
 import history from "../../data/history.json";
-import { getImageUrl } from "../../utils";
 
 export const Experience = () => {
   return (
@@ -11,11 +10,13 @@ export const Experience = () => {
       <div className={styles.content}>
         {history.map((item, id) => (
           <div key={id} className={styles.historyItem}>
+            {/* Use public folder path */}
             <img
-              src={getImageUrl(item.imageSrc)}
+              src="/assets/about/aboutImage.png"
               alt="Company Logo"
               className={styles.logo}
             />
+
             <div className={styles.historyItemDetails}>
               <div className={styles.block}>
                 <h3>会社名 / Company Name</h3>
